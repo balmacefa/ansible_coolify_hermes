@@ -1,0 +1,25 @@
+# Environment variables with secrets
+.env
+.env.local
+.env.*.local
+
+# Docker volumes (local state)
+hermes-home/
+hermes-workspace/
+hermes-agent-src/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backups
+*.backup
+*.bak
+*_backup/
