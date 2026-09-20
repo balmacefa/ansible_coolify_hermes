@@ -7,7 +7,7 @@ version: '3.8'
 
 services:
   hermes-agent:
-    image: 'nousresearch/hermes-agent@sha256:2f1f2f1725e5dc9a61cf6a2dea5aca52a776ec4d022cb29679e6aa3ff303e77a' # v2026.5.29
+    image: 'nousresearch/hermes-agent:v2026.9.14'
     command: gateway run
     environment:
       - HERMES_HOME=/home/hermes/.hermes
@@ -28,7 +28,7 @@ services:
     restart: unless-stopped
 
   hermes-webui:
-    image: ghcr.io/nesquena/hermes-webui:0.51.92
+    image: ghcr.io/nesquena/hermes-webui:0.52.318
     depends_on:
       hermes-agent:
         condition: service_healthy
